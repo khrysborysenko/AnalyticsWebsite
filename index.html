@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@media only screen and (max-width:320px) {
+    #chp{
+        display: none;
+    }
+    #cus{
+        display: none;
+    }
+    .grid-container{
+     
+    grid-template-areas: "item3_1"
+                         "item3_2"
+                         "item3_3"
+                         "item3_4"
+                         "item3_5"
+                         "item3_6";
+    }
+    .item3_6{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .item1, .item2, .item4, .item3_7, .item3_8, .item3_9{
+        display: none;
+    }
+   
+}
+@media only screen and (max-width:480px) {
+    .item3_1 p, .item3_2 p, .item3_3 p, .item3_4 p, .item3_5 p, .item3_6 p, .item3_7 p, .item3_8 p, .item3_9 p{
+font-size: 10px;
+
+    }
+    .fonts1{
+    font-size: 10px;
+}
+.main_menu {
+    display: none;
+}
+.logo{
+    margin: 0 50px 0;
+}
+.item6{
+    display: none;
+}
+}
+@media only screen and (max-width:768px) {
+ 
+ .button1 {
+     display: none;
+}
+.button2_2 {
+         
+       display: none; 
+     }
+
+
+}
+@media only screen and (max-width:1024px) {
+    .cookies{
+        width: 70%;
+}
+form {
+            margin: 0 5% 0 0;
+            
+        }
+}
+
+
+
+
+         body{
+            background-color: #137f92	;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 2% repeat(5, 19%) 2%; 
+            grid-template-areas: "item1 item1 item1 item1 item1 item1 item1"
+     "item2 item3_1 item3_2 item3_2 item3_3 item3_4 item5"
+     "item2 item3_1 item3_5 item3_6 item3_3 item3_4 item5"
+     "item2 item3_1 item3_7 item3_8 item3_9 item3_9 item5"
+     "item2 item4 item4 item4 item4 item4 item5"
+     "item6 item_6 item1_6 item1_6 item_6 item_6 item6";
+     justify-items: center; 
+   grid-template-rows: auto;
+            justify-items: stretch;
+        }
+        i {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0 3px 6px;
+}
+.item3_1 p, .item3_2 p, .item3_3 p, .item3_4 p, .item3_5 p, .item3_6 p, .item3_9 p{
+font-size: 20px;
+    }
+    
+.fonts1 {
+    font-size: 50px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.item1{
+    grid-area: 1 / 1 / span 1 / span 7;
+
+}
+.logo{
+    float: left;
+}
+.logo2{
+    float: left;
+    padding: 10px;
+}
+time{
+    margin-left: 10px;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+
+.main_menu nav {
+   
+  width: 98%;
+  margin: 0 auto 0px;
+}
+        .main_menu ul {
+            list-style: none; 
+  margin: 0;
+  padding: 0;
+  background: #137f92;
+  
+}
+.main_menu ul a {
+    display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+  color: #ffffff;
+}
+.main_menu .submenu {
+    position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  background: #2397ac;
+  
+  border: 1px solid #000000;
+}
+.main_menu ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+#chp{
+    float: right;
+}
+form {
+            text-align: end;
+            margin-top: -45px;
+            
+        }
+        .underline {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+}
+        .button1 {
+            font-size: 15px;
+            border: 0;
+            padding: 0 30px;
+            background: #137f92;
+            font-family: 'Lora', serif;
+        }
+        .button2 {
+            border-radius: 25px; 
+            border: 0;
+            font-size: 15px;
+            margin: 0 30px;
+            padding: 10px 20px;
+            background: #ffffff;
+            font-family: 'Lora', serif;
+        }
+        .button2_2 {
+            border-radius: 25px; 
+            border: 0;
+            font-size: 15px;
+            margin: 0 30px;
+            padding: 10px 20px;
+            background: #ffffff;
+            font-family: 'Lora', serif;
+        }
+
+
+.item2{
+    grid-area: 2 / 1 / span 5 / span 1;
+}
+/* .item3{
+    border : 6px solid rgb(255, 255, 255);
+    border-radius: 1%;
+    grid-column-start: 2;
+   grid-column-end: 7;
+   grid-row-start: 2;
+   grid-row-end: 6;
+
+} */
+.item3_1{
+grid-area: 2 / 2 / span 3 / span 1;
+margin: 5% 2% 0 5%;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_2{
+    grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 2;
+
+margin: 2.5% 1% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_3{
+    grid-column-start: 5;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 4;
+
+margin: 5% 2% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_4{
+    grid-column-start: 6;
+   grid-column-end: 6;
+   grid-row-start: 2;
+   grid-row-end: 4;
+
+margin: 5% 5% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_5{
+    grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 3;
+   grid-row-end: 3;
+
+margin: 2% 2% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_6{
+    grid-column-start: 4;
+   grid-column-end: 5;
+   grid-row-start: 3;
+   grid-row-end: 3;
+
+margin: 2% 2% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_7{
+    grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 4;
+   grid-row-end: 4;
+
+margin: 2% 2% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_8{
+    grid-column-start: 4;
+   grid-column-end: 5;
+   grid-row-start: 4;
+   grid-row-end: 4;
+
+margin: 2% 2% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item3_9{
+    grid-column-start: 5;
+   grid-column-end: 7;
+   grid-row-start: 4;
+   grid-row-end: 4;
+
+margin: 1% 2.5% 0 0;
+background-color: #2cc1db;
+border-radius: 3%;
+}
+.item4{
+grid-area: 5 / 2 / span 5 / span 6;
+}
+.item5{
+    grid-area: 2 / 7 / span 5 / span 7;
+}
+.item6{
+    border-top: 1px solid rgb(255, 255, 255);
+    grid-area: 6 / 1 / span 6 / span 7;
+}
+.foot_buttons{
+    margin: 0 300px 0 0;
+}
+
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+           <div class="logo">
+            <img src="images/logo.png" alt="Лого" width="170px" height="60px">
+        </div>
+            <nav class="main_menu">
+                <ul class="topmenu">
+                    <li><a href="#">About<i class="arrow down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="">Item 1</a></li>
+                          <li><a href="">Item 2</a></li>
+                        </ul>
+                      </li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#">About<i class="arrow down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Item 1</a></li>
+                      <li><a href="">Item 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">About<i class="arrow down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Item 1</a></li>
+                      <li><a href="">Item 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">About<i class="arrow down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="">Item 1</a></li>
+                      <li><a href="">Item 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+           
+            <form>
+                <button class="button1" style="color: rgb(255, 255, 255);"><span class="underline">Sign in</span></button>
+                <button class="button2">Free trial</button>
+            </form>  
+           
+        </div>
+        <div class="item2"></div>
+        <div class="item3"></div>  
+        <div class="item3_1">
+            
+            <p><span class="underline">Back-end</span></p>
+            <div style="border: 4px solid #00C12B; border-radius: 5%;">
+            <p>23,4%</p>
+            <img id="chp"src="images/checkpoint.png" alt="checkpoint1" width="30px" height="30px">
+            <p>Java</p>
+           
+        </div>
+            
+            <p>20,3%</p>
+            <p>C#</p>
+            <p>18,4%</p>
+            <p>PHP</p>
+            <p><span class="underline">Other:</span></p>
+            <p>PHP</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>C++</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Swift</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Ruby</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Kotlin</p>
+           
+        
+        </div>
+        <div class="item3_2">
+            <p><span class="underline">Customer feedback</span></p>
+            <p id="cus">Such a great tool - gives a general understanding of the area</p>
+        </div>
+        <div class="item3_3">
+            <p><span class="underline">Data:</span></p>
+            <div style="height: 48%;">
+                <p>68,2%</p>
+            <p>Python</p>
+            </div>
+            <div style="height: 48%;">
+                <p>26%</p>
+            <p>Scala</p>
+            </div>
+        </div>
+        <div class="item3_4">
+            <p><span class="underline">Desktop:</span></p>
+            <div style="border: 4px solid #00C12B; border-radius: 5%;">
+                <p>33,9%</p>
+                <img id="chp"src="images/checkpoint.png" alt="checkpoint1" width="30px" height="30px">
+            <p>C#</p>
+            </div>
+            <div>
+                <p>31,1%</p>
+            <p>C++</p>
+            </div>
+            <div>
+                <p>8,2%</p>
+            <p>Python</p>
+            </div>
+            <div style="border: 4px solid #c13700; border-radius: 5%;">
+                <p>1,9%</p>
+                <img id="chp"src="images/cross.png" alt="checkpoint1" width="30px" height="30px">
+            <p>1C</p>
+            </div>
+        </div>
+        <div class="item3_5">
+            <p><span class="underline">System:</span></p>
+            <p>C++</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>C</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Python</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Java</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Go</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>T-SQL</p>
+        </div>
+        <div class="item3_6">
+            <p><span class="underline">QA:</span></p>
+            <p>Java</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Python</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>C#</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>Ruby</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>C</p>
+            <hr align="center" width="auto" size="1" color="#f4f4f4" />
+            <p>PHP</p>
+        </div>
+        <div class="item3_7">
+            <p class="fonts1"><span class="underline">17,9%</span></p>
+            <p>Python</p>
+        </div>
+        <div class="item3_8">
+            <p class="fonts1"><span class="underline">13,9%</span></p>
+            <p>JavaScript</p>
+        </div>
+        <div class="item3_9">
+            <p><span class="underline">Other:</span></p>
+            <div style="width: 48%; float: left;">
+                <p>5,7%</p>
+            <p>Java</p>
+            </div>
+            <div style="width: 42%; float: right; border: 4px solid #00C12B; border-radius: 5%;">
+                <p>12,5%</p>
+                <img id="chp"src="https://cdn.pixabay.com/photo/2017/03/28/01/46/check-mark-2180770_960_720.png" alt="checkpoint1" width="30px" height="30px">
+            <p>Go</p>
+            </div>
+        </div>
+        <div class="item4">
+            <div class="logo2">
+            <img src="https://ncube-digest.com/wp-content/uploads/2019/11/AI-Programming.png" alt="Лого2" width="80" height="40px">
+        </div>
+        <div class="upt">
+            <p style="color: rgb(255, 255, 255); margin: 20px 0 0 1.5%; font-family: 'Lora', serif;">Last statistics update:<time>10:25</time></p>
+           </div>
+           
+        </div>  
+        <div class="item5
+        "></div>
+        <div class="item6">
+            <div class="cookies">
+            <p style=" color: rgb(255, 255, 255); padding: 20px 0 0 1.5%; font-size: 15px; font-family: 'Lora', serif;">By continuing to use this site you consent to the use of cookies in accordance with our cookie policy.   If you want to know more information about this, follow the link on the right or write for support.<p>
+            </div>
+                <form>
+                
+                <button class="button1" style="color: rgb(255, 255, 255);"><span class="underline">Learn more</span></button>
+            
+        <button class="button2_2">Got it</button>
+   </form>
+    </div>
+      </div>
+</body>
+</html>
